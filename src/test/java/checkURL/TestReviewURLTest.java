@@ -16,7 +16,7 @@ public class TestReviewURLTest {
     @BeforeClass
     public void beforeClass() {
 
-        System.setProperty("webdriver.chrome.driver", "./src/test/resources/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./src/test/resources/driver/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         page = new CheckLinkPage(driver);

@@ -25,14 +25,14 @@ public class ScreanshotAppTest {
 
     @Before
     public void setUp() throws Exception {
-      //   System.setProperty("webdriver.chrome.driver","./src/test/resources/driver/chromedriver.exe");
-     //   driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver","./src/test/resources/driver/chromedriver");
+        driver = new ChromeDriver();
 
        // System.setProperty("webdriver.gecko.driver","./src/test/resources/driver/geckodriver.exe");
        // driver = new FirefoxDriver();
 
-        System.setProperty("webdriver.edge.driver","./src/test/resources/driver/msedgedriver.exe");
-        driver = new EdgeDriver();
+        //System.setProperty("webdriver.edge.driver","./src/test/resources/driver/msedgedriver.exe");
+       // driver = new EdgeDriver();
 
         driver.manage().window().maximize();
         driver.get("https://www.google.com/");

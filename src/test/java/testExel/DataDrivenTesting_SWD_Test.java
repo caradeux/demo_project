@@ -19,7 +19,7 @@ public class DataDrivenTesting_SWD_Test {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "./src/test/resources/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./src/test/resources/driver/chromedriver");
         driver = new ChromeDriver();
         writeFile = new WriteExcelFile();
         readFile = new ReadExcelFile();

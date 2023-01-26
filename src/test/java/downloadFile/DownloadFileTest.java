@@ -20,7 +20,7 @@ public class DownloadFileTest {
 
     @BeforeClass
     public void beforeClass() {
-        System.setProperty("webdriver.chrome.driver","./src/test/resources/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","./src/test/resources/driver/chromedriver");
         HashMap<String , Object> chromePrefs = new HashMap<String , Object>();
         chromePrefs.put("profile.default_content_settings.popup",0);
         chromePrefs.put("download.default_directory", downloadFilePath);

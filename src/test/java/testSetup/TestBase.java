@@ -71,7 +71,7 @@ public class TestBase {
     }
 
     private WebDriver initChromeDriver(String appURL) {
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(appURL);
